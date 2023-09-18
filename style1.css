@@ -1,0 +1,167 @@
+body {
+    max-width: 1400px;
+    margin: 10% auto !important;
+    font-family: Arial, sans-serif;
+}
+.conteneur{
+    border:2px solid #03c4a4 ;
+    border-radius: 15px;
+    padding-left: 0px !important;
+}
+.left{
+    padding: 0px !important;
+    border-right:2px solid #03c4a4 ;;
+}
+.left .labelTache {
+    background-color: #03c4a4;
+    text-align: center;
+    padding: 10px;
+    /* Hassane Abdel-Razak */
+}
+
+.left .labelTache h6 {
+    font-size: 24px;
+    color: #fff;
+}
+.left .taches .ajouterTache {
+   text-align: center;
+}
+
+.left .taches .ajouterTache input,
+.left .taches .ajouterTache select {
+    height: 40px;
+    margin: 10px 0;
+}
+
+.left .taches .ajouterTache button {
+    width: 100%;
+    max-width: 250px;
+    background-color: #03c4a4;
+    color: #fff;
+    border: none;
+}
+.right .listeTaches{
+justify-content: center;}
+
+.right .listeTaches h6 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #03c4a4;
+}
+
+.right .listEntier:nth-child(even) {
+    background-color: #03c4a4;
+}
+.listEntier{
+    text-align: center;
+    height: 3rem;
+    padding-top: 10px;
+    font-size: 22px;
+}
+/* Appliquer une couleur de fond aux éléments pairs */
+#list li:nth-child(even) {
+    background-color: #b4f19e;
+}
+
+/* Appliquer une couleur de fond aux éléments impairs */
+#list li:nth-child(odd) {
+    background-color: #e6f799;
+}
+#list li {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+}
+#list li p{
+    font-size: 20px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+#list li button{
+    background: none;
+    border: none;
+}
+#list li button .fa-pen-to-square{
+    color: blue;
+    font-size: 20px;
+}
+#list li button .fa-trash{
+    color: red;
+    font-size: 20px;
+
+}
+#list li button .fa-eye{
+    color: green;
+    font-size: 20px;
+}
+.bas .descripTitle h6 {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bas .descripTache {
+    border: 2px solid #03c4a4;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    min-height: 100px;
+    /* Hassane Abdel-Razak */
+}
+.tacheInfo{
+    z-index: 5;
+    width: 30rem !important;
+    position: absolute;
+    left: 40%;
+    top:40%;
+    border:1px solid black;
+    padding: 0px !important;
+    border-radius: 20px;
+    background-color: aliceblue;
+    display: none;
+}
+.tacheInfo .tInfolabel{
+    text-align: center;
+    font-weight: bold ;
+    background-color: #03c4a4;
+    color: #fff;
+    overflow: hidden;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+}
+.tInfoContenu p {
+    color: #03c4a4;
+}
+.tInfoContenu p span {
+   color: black !important;
+   justify-content: flex-end;
+}
+.notification{
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 30rem !important;
+    text-align: center;
+    position: absolute;
+    border: 2px solid #03c4a4;
+    background-color: #fff;
+    top: 2rem;
+    right: 10px;
+    display: none;
+}
+.notification .titre{
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: #03c4a4;
+    width: 30rem;
+}
+.notification .contenu{
+    font-size: 20px;
+}
+/* Classe pour appliquer le flou à l'arrière-plan */
+.blur-background {
+    filter: blur(5px); /* Ajustez la valeur de flou selon vos préférences */
+    /* pointer-events: none; Empêche les clics sur l'arrière-plan flou */
+    transition: filter 0.3s ease; /* Ajoute une transition en douceur pour l'effet de flou */
+  }
+  
